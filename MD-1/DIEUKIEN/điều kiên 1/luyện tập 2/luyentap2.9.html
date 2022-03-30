@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="number" id="nhapa">
+<input type="number" id="nhapb">
+<input type="number" id="nhapc">
+<button type="button" onclick="tt()"> Ấn</button>
+<h1 id="abc"></h1>
+<script>
+    function tt(){
+        let a=+document.getElementById("nhapa").value
+        let b=+document.getElementById("nhapb").value
+        let c=+document.getElementById("nhapc").value
+      if (a<=0||b<=0||c<=0){
+       document.getElementById("abc").innerHTML= ("không phải là cạn của tam giác")
+      }
+        if (a+b>c && a+c>b && b+c>a){
+            document.getElementById("abc").innerHTML= ("là cạnh của tam giác")
+        }
+    }
+</script>
+
+</body>
+</html>

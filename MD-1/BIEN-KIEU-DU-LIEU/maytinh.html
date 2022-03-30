@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="n1" type="text">
+<input id="n2" type="text"> <br>
+<button onclick="a1()" id="cong"> Addtion(+)</button>
+<button onclick="a2()" id="tru"> Subtraction(-)</button>
+<button onclick="a3()" id="nhan"> Multiplication(x)</button>
+<button onclick="a4()" id="chia"> Division(/)</button>
+<h2 id="ketqua">kết quả</h2>
+<script>
+ function a1() {
+let b1 = +document.getElementById("n1").value;
+let b2 = +document.getElementById("n2").value;
+let kq1 = b1 + b2;
+document.getElementById("ketqua").innerHTML = kq1;
+ }
+ function a2() {
+let b1 = document.getElementById("n1").value;
+let b2 = document.getElementById("n2").value;
+let kq2 = b1 - b2;
+document.getElementById("ketqua").innerHTML = kq2;
+ }
+ function a3() {
+let b1 = document.getElementById("n1").value;
+let b2 = document.getElementById("n2").value;
+let kq3 = b1 * b2;
+document.getElementById("ketqua").innerHTML = kq3;
+ }
+ function a4() {
+let b1 = document.getElementById("n1").value;
+let b2 = document.getElementById("n2").value;
+let kq4 = b1 / b2;
+document.getElementById("ketqua").innerHTML = kq4;
+ }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doanhso</title>
+</head>
+<body>
+<input type="number" id ="dt">
+<button type="button" onclick=" xx()"> Ấn</button>
+<h1 id="hh"></h1>
+<script>
+    let dt =document.getElementById("dt")
+    let hh=document.getElementById("hh")
+    function xx() {
+        let a = dt.value
+        let b = hh.value
+        if (a >= 15000000)
+            document.write("hoa hồng:" + 1500000)
+        else if (a >= 10000000)
+            document.write("hoa hồng:" + 100000)
+        else if (a >= 5000000)
+            document.write("hoa hông:" + 500000)
+
+        else document.write(" cố gắng tháng sau nhé!")
+    }
+   </script>
+</body>
+</html>

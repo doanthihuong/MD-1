@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body>
+<!--Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+ Nếu là nguyên dương trả về true, ngược lại trả về false.-->
+<input id="nhapa">
+<button type="button" onclick="kiemtra()"> Check</button>
+<h1 id="kq"></h1>
+</body>
+<script>
+    function snt(a) {
+        let text=""
+        if(a>0) {
+            text = "true"
+            return text
+        }  else {
+            text="false"
+        }
+        return text
+    }
+    function kiemtra() {
+        let x=document.getElementById("nhapa").value
+        kq.innerHTML=snt(x)
+    }
+</script>
+
+</html>

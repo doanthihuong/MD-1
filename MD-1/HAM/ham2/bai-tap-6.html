@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra tính đối xứng của 1 chuổi</title>
+</head>
+<body>
+<script>
+    let chuoi="abc32cba"
+    let check = "đối xứng"
+        for (i=0;i<chuoi.length;i++) {
+            if (chuoi[i]!==chuoi[chuoi.length-1-i]) {
+            check= "không đối xứng"
+            }
+        } alert(check)
+</script>
+
+</body>
+</html>

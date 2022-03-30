@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background:url("https://i.pinimg.com/originals/51/02/16/5102162bc52d172d2195a8edfdb0b50f.png");
+           background-size: weight:1000px; height: 50px
+        }
+    </style>
+</head>
+<body Id="body">
+
+<h1> Bạn có thích tôi không?</h1>
+<button style="position: absolute;left:80px;top:80px;" onmouseover="dichuyen()" id="xx">Yes</button>
+<button onclick="zz()" >No</button>
+<script>
+    let bd=document.getElementById("body")
+    let yy= document.getElementById( "xx");
+    function dichuyen(){
+        yy.style.left= Math.random()*700 +'px';
+        yy.style.top= Math.random()*200 +'px';
+    }
+    function zz(){
+        alert("ô nô nô")
+    }
+    bd.style.background="url(https://i.pinimg.com/originals/51/02/16/5102162bc52d172d2195a8edfdb0b50f.png)"
+</script>
+<!--math.random():sinh ra các số thực từ 0->0.99-->
+</body>
+</html>

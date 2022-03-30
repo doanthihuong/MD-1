@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đổi tiền tệ</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><h5>Amount</h5></td>
+        <td></td>
+        <td><h5>From Currency</h5></td>
+        <td></td>
+        <td><h5>to Currentcy</h5></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="nhap"></td>
+        <td></td>
+        <td><select>
+            <option>VND</option>
+            <option>Yên</option>
+            <option>Euro</option>
+
+        </select></td>
+        <td></td>
+        <td><select>
+            <option>Đô la</option>
+        </select></td>
+        <td>
+            <button onclick="v1()">Convert</button>
+        </td>
+    </tr>
+    <tr>
+        <td><h2 id="kq" value="Result"></h2></td>
+    </tr>
+</table>
+<script>
+
+    function v1() {
+        let a = document.getElementById("nhap")
+        let d1 = a.value / 23000
+        document.getElementById("kq").innerHTML = 'Result =' + d1;
+    }
+</script>
+</body>
+</html>

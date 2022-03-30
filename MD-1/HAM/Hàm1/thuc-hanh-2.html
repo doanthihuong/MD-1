@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc hannh 2</title>
+</head>
+<body>
+<form>
+    <p>
+        <label>Fahrenheit</label>
+        <input id="inputf" type="number" placeholder="Fahrenheit"
+               oninput="doc()"
+               onchange="doc()">
+    </p>
+    <p>Celsius: <span id="daura"></span></p>
+</form>
+
+<script>
+     let nhietdof=document.getElementById("inputf")
+    function doc() {
+        document.getElementById("daura").innerHTML = (nhietdof.value-32) / 1.8;
+    }
+
+</script>
+</body>
+</html>

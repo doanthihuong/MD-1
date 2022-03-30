@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phuongtrinhbac2</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập a :");
+    let b = prompt("nhập b :");
+    let c = prompt("nhập c :");
+    if(a == 0){
+        phuongtrinhbac1(b,c);
+    } else {
+        phuongtrinhbac2(a,b,c);
+    }
+
+    function phuongtrinhbac1(b,c){
+        if(b == 0) {
+            if(c == 0) {
+                document.write("phương trình có vô số nghiệm");
+            } else {
+                document.write("phương trình vô nghiệm");
+            }
+        } else {
+            document.write("Phương trình có nghiệm là: " + (-b/c));
+        }
+    }
+    function phuongtrinhbac2(a,b,c){
+        let d = b*b - 4*a*c;
+        if(d < 0) {
+            document.write("phương trình vô nghiệm");
+        } else {
+            document.write("Phương trình có 2 nghiệm là: " + ((-b-Math.sqrt(d))/(2*a)) + ", " + (-b+Math.sqrt(d))/(2*a));
+        }
+    }
+</script>
+</body>
+</html>

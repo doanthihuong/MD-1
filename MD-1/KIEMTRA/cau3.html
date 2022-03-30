@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau3</title>
+</head>
+<body>
+<!--c)	Tính tích các phần tử giá trị lẻ-->
+<script>
+    let a =[
+        [-1,3,5],
+        [0,7,8]
+    ]
+    let tich=1
+    for(let i=0; i<a.length; i++) {
+        for (let j = 0; j < a[i].length; j++) {
+            if (a[i][j] % 2 == 1) {
+                tich=tich*a[i][j]
+            }
+        }
+    }   document.write("tích :" +tich)
+</script>
+</body>
+</html>

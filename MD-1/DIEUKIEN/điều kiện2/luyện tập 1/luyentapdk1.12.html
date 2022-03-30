@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentapdieukien1</title>
+</head>
+<body>
+<input type="text" id="nhapa">
+<input type="text" id= "nhapb">
+<button type="button" onclick="ss()">ẤN1</button>
+<button type="button" onclick=" tt()">Ấn 2</button>
+
+<h1 id="kq"></h1>
+<!--bai1 kiem tra a chia het cho b hay khong?-->
+<!--bai2: kiểm tra học sinh đủ tuổi lới 10 không-->
+
+<script>
+let a= document.getElementById ( "nhapa")
+let b= document.getElementById ( "nhapb")
+let kq= document.getElementById("kq")
+ function ss() {
+        let c=a.value
+        let d=b.value
+
+        if(c%d==0) {
+            kq.innerHTML="a chia hết cho b"
+        } else
+            kq.innerHTML="a không chia hết cho b"
+    }
+
+function tt(){
+        tuoi=a.value
+      if (tuoi <16) {
+          kq.innerHTML = "không đủ điều kiện vào lớp 10";
+      } else
+          kq.innerHTML= "đủ điều kiện vào lớp 10"
+}
+
+
+</script>
+<!--bài2-->
+
+</body>
+</html>

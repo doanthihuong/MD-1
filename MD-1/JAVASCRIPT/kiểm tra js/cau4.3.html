@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<input type="text" id="nhapa">
+<input type="text" id="nhapb">
+<button onclick=" tong()">ẤN</button>
+<h1 id="ketqua"></h1>
+<script>
+    let a=document.getElementById("nhapa")
+    let b=document.getElementById("nhapb")
+    let kq=document.getElementById("ketqua")
+    function tong(){
+        let c=+a.value
+        let d=+b.value
+        kq.innerHTML=(c+d)*(d-c+1)/2
+    }
+
+</script>
+
+
+</body>
+</html>

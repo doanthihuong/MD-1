@@ -1,0 +1,43 @@
+body{
+    background-image: url("dep.jpg");
+    background-size: cover;
+    padding: 0px;
+    margin:0px
+}
+div.form-student , div.list-student {
+    font: caption;
+    width :600px;
+    border: 2px solid;
+    margin:25px;
+    padding: 10px;
+    float: left;
+}
+div.list-student {
+    width:600px;
+}
+div.form-student h3 {
+
+    height: 50px;
+    padding:0px;
+    margin-top:0px;
+}
+div.form-student label{
+    width:150px;
+    float:left;
+}
+div.form-student input [type="text"], button {
+    margin-bottom: 15px;
+    width: 150px;
+    padding: 5px;
+}
+button{
+    scroll-snap-type: block;
+    margin-top:15px
+}
+.loi {
+    color: red;
+}
+input {
+    width: 300px;
+    height: 30px;
+}

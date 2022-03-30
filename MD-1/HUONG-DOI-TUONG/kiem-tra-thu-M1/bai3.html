@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<!-- viet Hàm đếm số kí tự nguyên âm trong một chuỗi cho trước.HÀm có một tham số truyền
+mà một mảng các kí tự. trả hàm false nếu không có kí tự nguyên aamnaof.
+viết ct nhập vào một chuỗi bất kì.gọi hàm tìm số kí tự nguyên âm vừa xây dựng-->
+<script>
+    function count(chuoi) {
+        let dem=0
+        for(let i=0;i< chuoi.length;i++) {
+            if(( chuoi[i]=="u")||(chuoi[i]=="e")||(chuoi[i]=="o")||(chuoi[i]=="a")||(chuoi[i]=="i")){
+                dem++
+            }
+        } alert(dem);
+    }
+    count("huong")
+</script>
+</body>
+</html>

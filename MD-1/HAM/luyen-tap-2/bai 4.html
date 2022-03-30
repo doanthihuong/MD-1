@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<!--Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+ Nếu là ký tự số hàm trả về true, ngược lại trả về false.-->
+<script>
+    function check(x){
+        let text=" "
+        if (isNaN(x)) {
+            text=" không phải kí tự số"
+            return text
+        } else {
+            text= " là kí tự sô"
+        } return text
+    }
+    a=prompt("nhapvapdi!")
+    alert(check(a))
+</script>
+
+</body>
+</html>

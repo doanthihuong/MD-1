@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitap2</title>
+</head>
+<body>
+<input type="text" id="nhapvao">
+<select id="chon">
+    <option value="f">foottometer</option>
+    <option value="m">metertofoot</option>
+</select>
+<button type="button" onclick="change()">Chuyển</button>
+<h1 id="ketqua"></h1>
+<script>
+    let a=document.getElementById("nhapvao")
+    let ch=document.getElementById("chon")
+    let kq=document.getElementById( "ketqua")
+    function change(){
+        let so=a.value
+        let luachon=ch.value
+        if (luachon=="f") {
+            kq.innerHTML=so *0.305;
+        } else {
+            kq.innerHTML=3.297*so;
+        }
+
+        }
+
+</script>
+</body>
+</html>

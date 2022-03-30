@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thực hành 1</title>
+</head>
+<body>
+
+<!--Tạo và gọi hàm-->
+<script>
+
+    function xacnhan(yes) {
+        let kq = "";
+        if (yes) {
+            kq = "  bắt đầu nào! "
+        } else {
+            kq = " thôi  để bửa sau đi!"
+        }
+        return kq;
+    }
+
+    let xn = confirm("chơi game cùng tao nhá?")
+    let traloi = xacnhan(xn)
+    alert(traloi)
+</script>
+</body>
+</html>

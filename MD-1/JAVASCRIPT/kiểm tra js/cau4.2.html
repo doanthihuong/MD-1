@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhapa">
+<input type="text" id="nhapb">
+<button onclick=" tinh()">ÂN</button>
+<h4 id="ketqua"></h4>
+<script>
+let a=document.getElementById("nhapa")
+let b=document.getElementById("nhapb")
+let kq=document.getElementById("ketqua")
+function tinh(){
+    let binhphuong= a.value* a.value
+    let mu= a.value**b.value
+    kq.innerHTML= "binhphuong:" +binhphuong +"mu:" +mu
+}g
+
+
+</script>
+</body>
+</html>

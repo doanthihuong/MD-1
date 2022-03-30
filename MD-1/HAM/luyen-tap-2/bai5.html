@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<!--Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.-->
+<body>
+ <input id="nhapa">
+<input id="nhapb">
+<input id=nhapc>
+<button type="button" onclick="kiemtra()"> Check</button>
+<h1 id="kq"></h1>
+<script>
+    function snn(a,b,c) {
+        let min=a
+        if(b<=min) {
+            min=b
+        } if(c<=min) {
+            min=c
+        } return min
+    }
+    function kiemtra(){
+        let x= +document.getElementById("nhapa").value
+        let y=+document.getElementById("nhapb").value
+        let z= +document.getElementById("nhapc").value
+        kq.innerHTML=snn(x,y,z)
+    }
+
+
+
+</script>
+
+</body>
+</html>

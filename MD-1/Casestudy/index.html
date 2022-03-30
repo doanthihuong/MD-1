@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý học viên </title>
+    <link rel="Stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<script src="student.js"></script>
+<div class="form-student">
+    <h3><center>THÔNG TIN HỌC VIÊN</center></h3>
+     <div>Họ và tên</div>
+      <input type="text" id="fullname" placeholder="Họ và tên"/>
+        <div id="tenloi" class="loi" ></div>
+          <br/><br/>
+      <div>Địa chỉ email</div>
+    <input type="text" id="email" placeholder="Email"/>
+        <div id="emailloi" class="loi"></div>
+           <br/><br/>
+       <div>Số điện thoại</div>
+     <input type="text" id="phone" placeholder="Số điện thoại"/>
+    <div id="phoneloi" class="loi"></div>
+    <br/><br/>
+    <div>Địa chỉ</div>
+    <input type="text" id="diachi" placeholder="Địa chỉ"/>
+    <span id="diachiloi" class="loi"></span>
+    <br/><br/>
+        <div> Giới tính</div>
+    <input type="radio" name="gioitinh" id="nam"/> Nam
+    <input type="radio" name="gioitinh" id="nu"/> Nữ
+    <div id="gioitinhloi" class="loi"></div>
+    <br/>
+    <button onclick="save()">Lưu lại</button>
+</div>
+<div class="list-student">
+    <h3>
+        <center>DANH SÁCH HỌC VIÊN</center>
+    </h3>
+    <table id="danhsach" width="600px" border="2" cellspacing="0">
+<!--        <tr>-->
+<!--            <td>#</td>-->
+<!--            <td>Họ và tên</td>-->
+<!--            <td> Email</td>-->
+<!--            <td>Điện thoại</td>-->
+<!--            <td>Địa chỉ</td>-->
+<!--            <td>Hành động</td>-->
+<!--        </tr>-->
+    </table>
+</div>
+
+
+</body>
+</html>

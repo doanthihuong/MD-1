@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap3</title>
+</head>
+<body>
+<!--bài3:kierm tra số hơn hơn hay nhỏ hơn 0-->
+<input type="number" id="nhapa">
+<button type="button" onclick="ss()">ẤN</button>
+<h1 id="kq"></h1>
+<script>
+  let a= document.getElementById ("nhapa")
+  let kq= document.getElementById("kq")
+
+  function ss() {
+    let b= a.value
+    if(b>0)
+      kq.innerHTML = "a lớn hơn 0"
+    if  (b<0)
+      kq.innerHTML="a nhỏ hơn 0"
+    if  (b==0)
+      kq.innerHTML="a bằng 0"
+
+  }
+
+
+</script>
+</body>
+</html>

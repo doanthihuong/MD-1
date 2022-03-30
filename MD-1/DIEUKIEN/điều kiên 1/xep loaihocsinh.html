@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xeploaihocsinh</title>
+</head>
+<body>
+<input type="number" id ="kt">
+<input type="number" id ="giuaki">
+<input type="number" id ="cuoiki">
+<button type="button" onclick=" xx()"> Ấn</button>
+<h1 id="xl"></h1>
+<script>
+    let kt =document.getElementById("kt")
+    let giuaki =document.getElementById("giuaki")
+    let cuoiki=document.getElementById("cuoiki")
+    let xl=document.getElementById("xl")
+    function xx() {
+        let a= kt.value
+        let b=giuaki.value
+        let c=cuoiki.value
+        let d= (a+2*b+3*c)/6
+
+        if (d>=8.5)
+           document.write("Xuất sắc quá!")
+        else if (d>=6.5)
+          document.write("khá đấy!")
+       else if (d>=4.0)
+            document.write("trung bình rồi!")
+         else     document.write("kém quá! cố gắng lên")
+    }
+</script>
+
+
+</body>
+</html>

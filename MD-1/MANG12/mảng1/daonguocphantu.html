@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đảo ngược các phần từ trong mảng</title>
+</head>
+<body>
+<script>
+    let x=[2,4,6,8,10,12]
+    let dau=0
+    let cuoi=x.length-1
+    while (dau < cuoi) {
+        let a = x[dau];
+        x[dau] = x[cuoi];
+        x[cuoi] = a;
+        dau++;
+        cuoi--;
+    }
+    document.write (x)
+    alert(x.reverse())
+</script>
+</body>
+</html>

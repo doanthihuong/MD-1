@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phuongtrinhbacnhat</title>
+</head>
+<body>
+<input type="number" id="nhapa">
+<input type="number" id="nhapb">
+<button type="button" onclick="tt()"> Ấn</button>
+<script>
+    let a=document.getElementById("nhapa")
+    let b=document.getElementById("nhapb")
+    function tt() {
+        let c=a.value
+        let d=b.value
+        let kq = -d/c
+        if (c!=0)
+            document.write ("kết quả:" +kq)
+         if(a==0)
+             document.write( "vô nghiệm")
+             }
+</script>
+
+</body>
+</html>

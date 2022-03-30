@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>namnhuan</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập năm")
+    if (a % 4 == 0) {
+        if (a % 100 == 0) {
+            if (a % 400 == 0) {
+                alert(a + "là năm nhuận");
+            } else {
+                alert(a + "không là năm nhuận");
+            }
+        } else {
+            alert(a + "là năm nhuận");
+        }
+
+    } else {
+        alert(a + "không là năm nhuận");
+    }
+
+</script>
+
+</body>
+</html>

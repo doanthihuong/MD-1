@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>  <input type="text" id="kc">
+
+    <img id="anh"
+           src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/2048px-Soccerball.svg.png"
+            alt="" style="position: absolute; top:50px ;left : 8px ; width: 100px" >
+
+    <button type="button" onclick="phai()">Phải</button>
+    <button type="button" onclick="trai()">Trái</button>
+    <button type="button" onclick="len()">Phải</button>
+    <button type="button" onclick="xuong()">Trái</button>
+<script>
+    let anh=document.getElementById("anh")
+   let kc=document.getElementById("kc")
+
+    function phai () {
+        anh.style.left=parseInt(anh.style.left) + 30 + "px";
+    }
+    function trai(){
+        anh.style.left=parseInt(anh.style.left) - 30 + "px";
+    }
+    function len(){
+        anh.style.top =parseInt(anh.style.top) + 30 + "px" ;}
+    function xuong() {
+        anh.style.top=parseInt(anh.style.top) - 30 + "px";}
+
+</script>
+
+</body>
+</html>
