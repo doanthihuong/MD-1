@@ -10,22 +10,18 @@
  sử dụng hàm vừa xây dựng để giải phương trình bậc nhất a=5,b=8
  -->
 <script>
-    function giaiptbn(a,b) {
-        if (a==0 && b !==0
-        đã) {
+    function giaiPtbn(a,b) {
+        if (a===0 && b!==0) {
             alert("vô nghiệm")
-        }  if (a==0 && b==0) {
-            alert( " phương trình có vô số nghiệm!")
+        }  if (a===0 && b===0) {
+            alert("phương trình có vô số nghiệm!")
         }
         else {
             let x = -b/a
             alert(x)
         }
     }
-    sox=+prompt("nhập số x")
-    soz=+prompt("nhập số z")
-   giaiptbn(sox,soz)
-    giaiptbn(5,8)
+    giaiPtbn(5,8)
 
 </script>
 </body>

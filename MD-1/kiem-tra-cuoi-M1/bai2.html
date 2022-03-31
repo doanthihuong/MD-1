@@ -11,18 +11,22 @@ số phần tử cần tìm, mảng cho trước
 VIết chương trình với một mảng số nguyên được khởi tạo trước. Nhập vào một giá trị bất kì
 sau đó kiểm tra xem giá trị số nguyên bất kì vừa nhập có nằm trong mảng đã nhập hay không-->
 <script>
-    var x = 2;
-    var y = [1,2,3,4,5];
-    var z = [6,7,8,9,10,11];
 
-    if(y[x] + z[x-1] == z[x+2])
-    {
-        console.log('Codegym');
-    }
-    else
-    {
-        console.log('Agilead');
-    }
+            let So = [1,5,7,9,5,24];
+            let a = +prompt('Mời nhập 1 giá trị');
+            let count = 0
+            function timVitri(a) {
+            for (let i=0;i<So.length;i++) {
+            if (a===So[i]) {
+            count = count+1;
+            alert(So[i] + "tại vị trí" + i)
+        }
+        }
+            if (count ===0) {
+            alert("không có trong mảng")
+        }
+        }
+            timVitri(a)
 
 </script>
 </body>
